@@ -98,7 +98,6 @@ skiplist = {
     "linalg.multi_dot",
     "linalg.norm",
     "linalg.pinv",
-    "linalg.slogdet",
     "linalg.solve",
     "linalg.solve_ex",
     "linalg.solve_triangular",

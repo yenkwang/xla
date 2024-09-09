@@ -210,7 +210,8 @@ class XLAFunctionMode(torch.overrides.TorchFunctionMode):
         return self.env.dispatch(func, types, args, kwargs)
       except OperatorNotFound:
         pass
-      return func(*args, **(kwargs or {}))
+      ret = func(*args, **(kwargs or {}))
+      return ret
 
 
 class XLADispatchMode(torch_dispatch.TorchDispatchMode):
